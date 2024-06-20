@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content-container">
+    <h1>To-Do List</h1>
+    <form>
+    <p><label for="mainGoal"> Main Goal of the Day:</label>
+    <textarea id="mainGoal" name="mainGoal" rows="2" cols="100" placeholder="Write your main goal..."></textarea>
+    <span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span> 
+    <label for="datepicker" name="datepicker"> Date:</label>
+    <input type="date" id="choose-date">
+    </p>
+    </form>
+    <br/>
+    
+    <div class="categories">
+        <div class="category must-do"> <img src="red.jpg" alt="Clock Image" width="80" height="80">
+            <h3>MUST DO:</h3>
+            <ul id="must-do-list">
+                <li>
+                    <input type="checkbox">
+                    <input type="text" placeholder="Enter your task">
+                    <input type="date" id="due-date" name="due-date">
+                </li>
+            </ul>
+            <button onclick="addTask('must-do-list')">Add Task</button>
+        </div>
+      
+       
+        <div class="category should-do"> <img src="blue.jpg" alt="Clock Image" width="80" height="80">
+            <h3>SHOULD DO:</h3>
+            <ul id="should-do-list">
+                <li>
+                    <input type="checkbox">
+                    <input type="text" placeholder="Enter your task">
+                    <input type="date" id="due-date">
+                </li>
+            </ul>
+            <button onclick="addTask('should-do-list')">Add Task</button>
+        </div>
+        <br/>
+        
+        <div class="category could-do"> <img src="green.jpg" alt="Clock Image" width="80" height="80">
+            <h3>COULD DO:</h3>
+            <ul id="could-do-list">
+                <li>
+                    <input type="checkbox">
+                    <input type="text" placeholder="Enter your task">
+                    <input type="date" id="due-date">
+                </li>
+            </ul>
+            <button onclick="addTask('could-do-list')">Add Task</button>
+        </div>
+        <br/>
+       
+        <div class="category if-time-list"> <img src="purple.jpg" alt="Clock Image" width="80" height="80">
+            <h3>IF I HAVE TIME:</h3>
+            <ul id="if-time-list">
+                <li>
+                    <input type="checkbox">
+                    <input type="text" placeholder="Enter your task">
+                    <input type="date" id="due-date">
+                </li>
+            </ul>
+            <button onclick="addTask('if-time-list')">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <body style="size:1040px;height:1500px;background:url('https://i.pinimg.com/564x/a7/83/65/a7836586f9a23388d8a7f010a3729de5.jpg') no-repeat; position:scroll; background-size: cover">
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+     
+    
