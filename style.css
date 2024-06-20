@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  margin: 0; /* Remove default body margin */
+  padding: 0;
+
+
+background-image: url('https://github.com/Gurpreetk-23/To-Do-List/blob/main/icebear.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+height: 100vh;
+z-index: -1;
+}
+.content-container {
+  position: relative; /* Allow content to be positioned relative to the viewport */
+  padding: 20px; /* Add padding for content spacing */
+  z-index: 1; /* Place content above the background image */
+}
+
+.centered { /* Centering the heading */
+text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.date-and-goal {
+  display: flex; /* Make date and textarea display inline */
+  align-items: center; /* Align content vertically */
+}
+
+.date-and-goal input[type="date"] {
+  margin-right: 10px; /* Add spacing between date picker and textarea */
+}
+
+.date-and-goal span {
+  margin-right: 5px; /* Add spacing between text and textarea */
+}
+
+.main-goal {
+  flex: 1; /* Allow textarea to fill remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category {
+  flex: 1 0 20%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray background */
+  position: relative; /* Required for layering the image on top (if used) */
+}
+
+.category h3 {
+  margin-bottom: 5px;
+}
+
+.category ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.category li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.category img {
+  display: block; /* Make image a block element for centering */
+  margin: 0 auto; /* Center image horizontally */
+  width: 50px; /* Adjust image width as needed */
+  height: 50px; /* Adjust image height as needed */
+}
+
+.category {
+  flex: 1 0 20%; /* Existing styles */
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Existing border */
+  border-radius: 5px; /* Existing rounded corners */
+  /* Remove background-image and position related styles if not using a category background image */
+  position: relative; /* Not required if not using category images on top */
+}
+
+.scrollable-content {
+  height: 200px; /* Set a height for the element */
+  overflow: auto; /* Add scrollbar when content overflows */
+}
+
+.must-do {
+  background-color: #ff8c8c; /* Red background for Must Do */
+}
+
+.should-do {
+  background-color: #b4d4fa; /* Blue background for Should Do */
+}
+
+.could-do {
+  background-color: #cce7cd; /* Green background for Could Do */
+}
+
+.if-time-list {
+  background-color: #d8c7ff; /* Purple background for If I Have Time */
+}
+
